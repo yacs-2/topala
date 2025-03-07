@@ -8,14 +8,14 @@
 }
 
 #preheader {
-  background-color: rgba(10,175,255,0.8);
+  background-color: rgba(255,255,255,0.8);
   text-align: center;
 }
 
 #header {
   position: sticky;
   top: 0px;
-  background-color: rgba(10,175,255,0.8);
+  background-color: rgba(255,255,255,0.8);
   text-align: center;
 }
 
