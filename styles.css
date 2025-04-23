@@ -61,3 +61,42 @@ hr {
   font-size: 120%;
   text-align: center
 }
+
+
+#global-preheader {
+  text-align:center;
+}
+
+#nav-list {
+  display: flex; 
+  justify-content: center;
+  align-ccontent: center;
+  list-style-type: none;
+  position:relative;
+  background-color:#9CBDDD;
+}
+
+#nav-list > li {
+  flex-grow:1;
+  display: block;
+}
+
+#nav-list ul {
+  display: none;
+  background-color:#FFB6C1;
+}
+
+#nav-list li:hover {
+  background-color: #FFB6C1;
+}
+
+#nav-list li:hover ul {
+  display:block;
+}
+
+#nav-list li ul {
+  list-style-type: none;
+  padding: 0px;
+  position: absolute;
+  
+}
