@@ -68,19 +68,27 @@ hr {
 }
 
 #nav-list {
+  padding:0px;
   display: flex; 
   justify-content: center;
   align-ccontent: center;
   list-style-type: none;
-  position:relative;
+  position: relative;
   background-color:#9CBDDD;
 }
 
 #nav-list > li {
   flex-grow:1;
   display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
 }
 
+#nav-link li a {
+  display: inline-block;
+  width: 100%;
+}
 #nav-list ul {
   display: none;
   background-color:#FFB6C1;
@@ -91,12 +99,12 @@ hr {
 }
 
 #nav-list li:hover ul {
-  display:block;
+  display: block;
 }
 
 #nav-list li ul {
   list-style-type: none;
   padding: 0px;
   position: absolute;
-  
+  width: 100%;
 }
