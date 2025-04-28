@@ -1,15 +1,50 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Nicolae's Photo Albums</title>
-    <link rel="stylesheet" href="/topala/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Faculty+Glyphic&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="gheader"></div>
-    <script src="/topala/global-header.js"></script>
-    <h1>Test this i where a photo will be</h1>
-  </body>
+<head>
+  <title>Nicolae's Photo Album</title>
+<link rel="stylesheet" href="https://yacs-2.github.io/topala/styles.css">
+  <link rel="stylesheet" href="album.css">
+  <script src="album.js"></script>
+</head>
+<body>
+<div id="gheader"></div>
+<script src="https://yacs-2.github.io/topala/global-header.js"></script>
+
+<div id="big-container" onClick="hideBig(this)">
+  <div>
+    <img id="big-img" src="https://cdn12.picryl.com/photo/2016/12/31/animal-close-up-cute-animals-d2bf66-1024.jpg" width="100%">
+  </div>
+</div>
+
+
+<div class="photo-row">
+  <div class="photo-container">
+    <img onClick="showBig(this)" src="https://freerangestock.com/sample/129030/single-monkey.jpg" width="100%" alt=" a cool monkey"></img>
+  <p>Cool Monkey</p>
+  </div>
+<div class="photo-container">
+    <img onClick="showBig(this)" src="https://freerangestock.com/sample/129030/single-monkey.jpg" width="100%" alt=" a cool monkey"></img>
+  <p>Cool Monkey</p>
+  </div>
+ <div class="photo-container">
+    <img onClick="showBig(this)" src="https://freerangestock.com/sample/129030/single-monkey.jpg" width="100%" alt=" a cool monkey"></img>
+<p>Cool Monkey</p>
+  </div>
+</div>
+
+<div class="photo-row">
+  <div class="photo-container">
+    <img onClick="showBig(this)" src="https://freerangestock.com/sample/129030/single-monkey.jpg" width="100%" alt=" a cool monkey"></img>
+  <p>Cool Monkey</p>
+  </div>
+<div class="photo-container">
+    <img onClick="showBig(this)" src="https://freerangestock.com/sample/129030/single-monkey.jpg" width="100%" alt=" a cool monkey"></img>
+  <p>Cool Monkey.</p>
+  </div>
+ <div class="photo-container">
+    <img onClick="showBig(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkUZU6tMF0Mckb1WZYSUFK1vHI7jKgm1EgJg&s" width="100%" alt=" a cool monkey"></img>
+<p>Cool Monkey</p>
+  </div>  
+</div>
+</body>
 </html>
