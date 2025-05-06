@@ -8,7 +8,7 @@ function showBig(_self) {
   const BIG_IMG = document.getElementById("big-img");
   
   
-  BIG_DIV.body.style.display = "block";
+  BIG_DIV.style.display = "block";
   BIG_IMG.setAttribute("src", _self.src);
   
   for (let _i = 0; _i < photoArr.length; _i++) {
@@ -18,7 +18,7 @@ function showBig(_self) {
 }
 
 function hideBig(_self) {
-  _self.body.style.display = "none";
+  _self.style.display = "none";
 }
 
 window.addEventListener("keydown", (_key) => {
