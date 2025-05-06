@@ -40,11 +40,5 @@ function decreaseIndex() {
 function updateBig() {
   const BIG_IMG = document.getElementById("big-img");
   const BIG_DIV = document.getElementById("big-container");
-  
-  BIG_IMG.setAttribute("src", photoArr[currentIndex]);
-  if (BIG_DIV.style.display == "block") {
-    BIG_DIV.style.display = "none";
-    BIG_DIV.offsetHieght;
-    BIG_DIV.style.display = "block";
-  }
+  BIG_IMG.setAttribute("src", photoArr[currentIndex].src);
 }
