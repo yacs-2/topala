@@ -1,10 +1,21 @@
-<h1>Nicolae's Pythagorean Calculator</h1>
 
-<label for="a-input">a</label>
-<input id="a-input"><br><br>
-<label for="b-input">b</label>
-<input id="b-input"><br><br>
-<label for="c-input">c</label>
-<input id="c-input"><span>Hypotenuse</span><br><br>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pythagorean Theorem Calculator</title>
+  <script src="pythag-calculator.js"></script>
+  <link rel="stylesheet" href="/topala/styles.css">
+</head>
+<body>
+  <h1>Pythagorean Theorem (Approximation) Calculator</h1>
 
-<button onclick="computePythag()">Compute</button>
+  <label for="a-input">a = </label>
+  <input id="a-input"><br><br>
+  <label for="b-input">b = </label>
+  <input id="b-input"><br><br>
+  <label for="c-input">c = </label>
+  <input id="c-input"><span>&lt;- Hypotenuse</span><br><br>
+
+  <button onclick="computePythag()">Compute</button>
+</body>
+</html>
