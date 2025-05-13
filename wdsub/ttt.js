@@ -13,7 +13,13 @@ function markSquare(_square) {
     _square.srcElement.innerText = "O";
   }
   
-  checkComplete();
+  if (checkComplete()) {
+    let winnerDiv = document.getElementById("winner");
+    winnerDiv.style.display = "block";
+    
+    let winnerText = document.querySelector("#winner div");
+    winnerDiv.innerText = isXTurn ? "Player X Wins":"Player O Wins"
+  }
   
   isXTurn = !isXTurn;
 }
@@ -24,6 +30,21 @@ function checkComplete() {
     if ((squareArr[_i].innerText == "X" || squareArr[_i].innerText == "O")
        && squareArr[_i].innerText ==  squareArr[_i + 3].innerText
        && squareArr[_i].innerText ==  squareArr[_i + 6].innerText
-       ) console.log("Game Over");
+       ) return true;
+else if ((squareArr[3 * _i].innerText == "X" || squareArr[3 * _i].innerText == "O")
+       && squareArr[3 * _i].innerText ==  squareArr[3 * _i + 1].innerText
+       && squareArr[3 * _i].innerText ==  squareArr[3 * _i + 2].innerText
+       ) return true;
   }
+  
+  if ((squareArr[0].innerText == "X" || squareArr[0].innerText == "O")
+     && squareArr[0].innerText ==  squareArr[4].innerText
+     && squareArr[0].innerText ==  squareArr[8].innerText
+     ) return true;
+  else if ((squareArr[2].innerText == "X" || squareArr[2].innerText == "O")
+     && squareArr[2].innerText ==  squareArr[4].innerText
+     && squareArr[2].innerText ==  squareArr[6].innerText
+     ) return true;
+  else return false;
+  
 }
