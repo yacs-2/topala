@@ -15,7 +15,7 @@ if (!hasIniDate) {
 	document.cookie = "iniDate" + new Date() + "; max-age=12345678987654321"
 } else {
 	let now = new Date();
-	document.cookie = "new-date" + now + "; max-age = 1234567987654321";
+	document.cookie = "new-date=" + now + "; max-age = 1234567987654321";
 	timeDifference = now.getTime() - iniDate.getTime();
 	//gets the difference in milliseconds from first access until now
 }
