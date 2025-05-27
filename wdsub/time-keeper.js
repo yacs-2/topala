@@ -7,7 +7,7 @@ cookieArr = document.cookie.split(";");
 for (const element of cookieArr) {
 	if (element.split("=")[0] == iniDate) {
 		hasIniDate = true;
-		iniDate = element.split("=")[1];
+		iniDate = new Date(element.split("=")[1]);
 	}
 }
 
