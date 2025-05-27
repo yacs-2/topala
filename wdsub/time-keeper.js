@@ -1,27 +1,27 @@
-let iniDate;
+let initDate;
 let timeDifference = 0;
-let hasIniDate = false;
+let hasInitDate = false;
 
 cookieArr = document.cookie.split(";");
 
+
 for (const element of cookieArr) {
-	if (element.split("=")[0] == iniDate) {
-		hasIniDate = true;
-		iniDate = new Date(element.split("=")[1]);
+	if (element.split("=")[0] =="init-date") {
+		hasInitDate = true;
+		initDate = new Date(element.split("=")[1]);
 	}
 }
 
-if (!hasIniDate) {
-	document.cookie = "iniDate" + new Date() + "; max-age=12345678987654321"
+if (!hasInitDate) {
+	document.cookie = "init-date" + new date() + "; max-age=3153600000";
 } else {
 	let now = new Date();
-	document.cookie = "new-date=" + now + "; max-age = 1234567987654321";
-	timeDifference = now.getTime() - iniDate.getTime();
-	//gets the difference in milliseconds from first access until now
+	document.cookie ="new-date=" + now + "; max-age=3153600000";
+	timeDifference = now.getTime() - initDate.getTime(); //gets the difference in milliseconds from first access until now
 }
 
 let timeSpent = document.getElementById("time-spent");
-let numHours = Math.floor(timeDifference / 360000);
-let numMinutes = Math.floor((timeDifference % 360000) * 60);
-let diffStr = numHours + ":" + numMinutes;
-timeSpent.innerText = diffStr
+let numHours = Math.floor(timeDifference / 3600000);
+let munMins = Math.floor((timeDifference % 3600000) * 60);
+let diffStr = numHours + ";" + numMins;
+timeSpent.innertext = diffStr;
