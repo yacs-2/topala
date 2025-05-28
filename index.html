@@ -12,7 +12,15 @@
     <script src="/topala/global-header.js"></script>
     <img id="bg" src="/topala/resource/bg.jpg">
     <div class="bordered">
-    <h2 class="heading">Welcome to Nicolae's 🐒 Website</h2>
+    <h2 class="heading">Welcome<span id="userspan"></span> to Nicolae's 🐒 Website</h2>
     </div>
+    <script>
+      let urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has("variable1")) {
+        let username = urlParams.get("variable1");
+        let userspan = document.getElementById("userspan");
+        userspan.innerText = "," + username + ",";
+      }
+    </script>
   </body>
 </html>
