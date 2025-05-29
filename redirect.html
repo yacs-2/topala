@@ -2,6 +2,18 @@
 <html>
   <head>
     <title>Redirceting</title>
+      <script>
+       let urlParams = new URLSearchParams(window.location.search);
+        let username = urlParams.get("variable1");
+
+        if (username == "Nicolae Za Master") {
+        //redirect to secret page
+          window.location.replace("https://yacs-2.github.io/topala/secret.html");
+        } else {
+          //redirect to home
+           window.location.replace("https://yacs-2.github.io/topala/home.html");
+        }
+      </script>
   </head>
 <body>
   <p>Redirecting...</p>
